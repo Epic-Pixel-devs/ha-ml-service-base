@@ -6,8 +6,6 @@ RUN pip install --upgrade pip
 # Set working space directory
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends gcc
-
 COPY requirements.txt ./
 RUN --mount=type=cache,target=/root/.cache/pip
 
