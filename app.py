@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify
-import pymongo
+
+from services.pymongo_service import PymongoService
+
 app = Flask(__name__)
-client = pymongo.MongoClient('mongodb+srv://herdeiros_aurora:herdeiros_aurora_001@cluster0.otugy2g.mongodb.net/')
-database1 = client['dev_ml_service_db']
-database2 = client['ml_service_non_handler_db']
+
 
 @app.route("/")
 def health():
