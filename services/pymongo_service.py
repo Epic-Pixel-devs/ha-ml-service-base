@@ -11,7 +11,10 @@ class PymongoService:
     def get_db(self, db_name: str):
         """
         Responsible to get database, need to pass in parameter the name of database
-        which you want to connect
+        which you want to connect.
+
+        Args:
+            db_name (str): name of database
         """
         return self.client[db_name]
     
