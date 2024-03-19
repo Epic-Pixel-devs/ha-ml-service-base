@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, jsonify
 
-from services.pymongo_service import PymongoService
+from flask import Flask, jsonify
+from services.scheduller_service import SchedulerService
 
 app = Flask(__name__)
 
+ss = SchedulerService()
+ss.start()
 
 @app.route("/")
 def health():
