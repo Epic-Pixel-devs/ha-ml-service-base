@@ -1,6 +1,6 @@
 application:
   name: ms-ml-service
-  version: 0.0.1
+  version: 0.0.2
 
 server:
   timezone: America/Sao_Paulo
@@ -12,10 +12,10 @@ infra:
       cluster: cluster0.otugy2g.mongodb.net/
       user: herdeiros_aurora
       pass: herdeiros_aurora_001
-      names: 
+      names:
         - ml_service_non_handler_db
         - dev_ml_service_db
-        
+
 domain:
   apicpixel:
     ms-gateway:
