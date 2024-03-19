@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, jsonify
 
-from services.pymongo_service import PymongoService
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
