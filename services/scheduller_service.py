@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from apscheduler.schedulers.background import BackgroundScheduler
+
 from batches.valorant.main import initialize
 
 class SchedulerService(BackgroundScheduler):
